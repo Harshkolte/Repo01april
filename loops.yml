@@ -5,7 +5,7 @@
   - name: i want install mlti package 
     apt: 
      name: {{" item "}}
-     loop:
-        - git
-        - wget
-        - tree 
+    loop:
+      - git
+      - wget
+      - tree 
