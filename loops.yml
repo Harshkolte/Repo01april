@@ -1,0 +1,11 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: i want install mlti package 
+    apt: 
+     name: {{ item }}
+     loop:
+        - git
+        - wget
+        - tree 
