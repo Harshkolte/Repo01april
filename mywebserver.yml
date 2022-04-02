@@ -4,3 +4,8 @@
   tasks:
   - name: i want to ping
     ping:
+
+  - name: i want to install web server
+    apt:
+     name: apache2
+     state: present
