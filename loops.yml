@@ -4,8 +4,8 @@
   tasks:
   - name: i want install mlti package 
     apt: 
-     name: {{" item "}}
-    loop:
+     name: "{{ item }}"
+    loops:
       - git
       - wget
       - tree 
